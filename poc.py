@@ -108,7 +108,7 @@ def main() -> None:
     init(autoreset=True)
     print(Fore.BLUE + """
 [!] CVE: CVE-2021-44228
-[!] Github repo: https://github.com/kozmer/log4j-shell-poc
+[!] Github repo: https://github.com/turbomaster95/log4j-poc-shell
 """)
 
     parser = argparse.ArgumentParser(description='log4shell PoC')
@@ -127,6 +127,9 @@ def main() -> None:
                         type=int,
                         default='9001',
                         help='Netcat Port')
+    parser.add_argument('--gitinfo',
+                        help='Info About The Devlopers',
+                        metavar='gitinfo')
 
     args = parser.parse_args()
 
